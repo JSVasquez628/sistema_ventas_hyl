@@ -16,15 +16,15 @@ return new class extends Migration
         Schema::create('company', function (Blueprint $table) {
             $table->id();
             $table->string('country');
-            $table->string('country_name');
+            $table->string('company_name');
             $table->string('company_type');
             $table->string('nit')->unique();
             $table->string('phone');
-            $table->string('correo');
             $table->string('email')->unique();
             $table->string('city');
             $table->string('department');
             $table->string('neighborhood');
+            $table->string('address');
             $table->string('postal_code');
             $table->text('logo');
             
